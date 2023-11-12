@@ -79,6 +79,27 @@
   -webkit-text-fill-color: transparent;
 }
 
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer {
+  background: linear-gradient(100deg, #9ca3af 40%, #d1d5db 50%, #9ca3af 60%);
+  background-size: 200% 100%;
+  animation: shimmer-bg 2s ease-in-out infinite;
+}
+
+@keyframes shimmer-bg {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

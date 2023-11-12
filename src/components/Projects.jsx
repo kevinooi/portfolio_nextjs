@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -43,18 +43,22 @@ const Projects = () => {
 export default SectionWrapper(Projects, "project");
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, preview_url }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} animate={{ opacity: 1 }}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450
-        }}
-        className="bg-teal-800 p-5 rounded-2xl sm:w-[360px] w-full shadow-card"
-      >
-        <div className="relative w-full h-[230px]">
-          <Image src={image} alt="project_image" className="w-full h-full object-cover rounded-2xl" />
+      <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="bg-teal-800 p-5 rounded-2xl sm:w-[360px] w-full shadow-card">
+        <div className="relative w-full h-[230px] rounded-2xl overflow-hidden">
+          {!imgLoaded && <div className="absolute inset-0 shimmer rounded-2xl" />}
+
+          <Image
+            src={image}
+            alt="project_image"
+            fill
+            loading="lazy"
+            onLoad={() => setImgLoaded(true)}
+            className={`object-cover rounded-2xl transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+          />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             <div
@@ -63,12 +67,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             >
               <Image src={darkgithub} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>
+
             {preview_url && (
               <div
                 onClick={() => window.open(preview_url, "_blank")}
                 className="black-gradient h-10 w-10 p-1.5 rounded-full flex justify-center items-center cursor-pointer"
               >
-                <EyeIcon className="rounded-full" />
+                <EyeIcon />
               </div>
             )}
           </div>
