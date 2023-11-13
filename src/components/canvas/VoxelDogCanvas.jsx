@@ -11,7 +11,7 @@ export const DogContainer = forwardRef(({ children }, ref) => {
     return (
         <div
             ref={ref}
-            className="relative -z-0 mx-auto pt-30Sch w-280 sm:w-480 md:w-640 lg:w-800"
+            className="relative -z-0 mx-auto pt-[80px] md:pt-[120px] lg:pt-[100px] w-[280px] sm:w-[480px] lg:w-[640px] h-[280px] sm:h-[480px] lg:h-[640px]"
         >
             {children}
         </div>
@@ -20,7 +20,11 @@ export const DogContainer = forwardRef(({ children }, ref) => {
 
 export const VoxelDogCanvas = dynamic(() => import("./VoxelDog"), {
     ssr: false,
-    loading: () => <DogSpinner />,
+    loading: () => (
+        <DogContainer>
+            <DogSpinner />
+        </DogContainer>
+    ),
 });
 
 export default VoxelDogCanvas;

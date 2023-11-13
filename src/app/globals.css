@@ -4,27 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .pt-30Sch {
-        padding-top: calc(30vh);
-    }
-    .pt-300 {
-        padding-top: 300px;
-    }
-    .w-280 {
-        width: 280px;
-    }
-    .w-480 {
-        width: 480px;
-    }
-    .w-640 {
-        width: 640px;
-    }
-    .w-800 {
-        width: 800px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;

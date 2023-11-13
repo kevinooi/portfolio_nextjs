@@ -22,7 +22,7 @@ const VoxelDog = () => {
         const { current: container } = refContainer;
         if (container && renderer) {
             const scW = container.clientWidth;
-            const scH = 800;
+            const scH = container.clientHeight; //640
 
             renderer.setSize(scW, scH);
         }
@@ -33,8 +33,7 @@ const VoxelDog = () => {
         const { current: container } = refContainer;
         if (container) {
             const scW = container.clientWidth;
-            const scH =
-                window.innerHeight < 1000 ? window.innerHeight - 200 : 800;
+            const scH = container.clientHeight; // 640;
 
             const renderer = new THREE.WebGLRenderer({
                 antialias: true,
@@ -56,13 +55,7 @@ const VoxelDog = () => {
 
             // 640 -> 240
             // 8   -> 6
-            const addiationalScale =
-                window.innerHeight < 700
-                    ? 2.8
-                    : window.innerHeight < 1000
-                    ? 2
-                    : 1.2;
-            const scale = scH * 0.005 + addiationalScale; // 4.8
+            const scale = scH * 0.005 + (window.innerWidth < 640 ? 3.4 : 2.2); // 4.8
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
