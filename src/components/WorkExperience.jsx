@@ -43,7 +43,7 @@ const WorkExperience = () => {
 export default SectionWrapper(WorkExperience, "work");
 
 const ExperienceCard = ({ experience }) => {
-    const { ref, inView } = useInView({ threshold: 0 });
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0 });
     return (
         <div ref={ref} className="vertical-timeline-element">
             <VerticalTimelineElement
