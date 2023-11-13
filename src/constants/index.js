@@ -189,7 +189,7 @@ const projects = [
     {
         name: "Recipe App",
         description:
-            "A versatile application available on both mobile and web platforms, offering an extensive range of food and drink recipes categorized along with detailed ingredient information.",
+            "A flutter application available on both mobile and web platforms, offering an extensive range of food and drink recipes categorized along with detailed ingredient information.",
         tags: [
             {
                 name: "flutter",
@@ -200,15 +200,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "unit test",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "widget test",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "integration test",
+                name: "unit_test",
                 color: "pink-text-gradient",
             },
         ],
