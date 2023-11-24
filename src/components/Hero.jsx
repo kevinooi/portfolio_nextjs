@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 mx-auto">
                 <div className="col-span-5">
                     <div
-                        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start justify-center md:justify-start gap-5`}
+                        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start justify-start gap-5`}
                     >
                         <div className="flex flex-col justify-center items-center mt-5">
                             <div className="w-5 h-5 rounded-full bg-[#804dee]" />
@@ -34,6 +34,8 @@ const Hero = () => {
                                         1000,
                                         "Mobile Developer",
                                         1000,
+                                        "Backend Developer",
+                                        1000,
                                     ]}
                                     wrapper="span"
                                     speed={50}
@@ -50,13 +52,13 @@ const Hero = () => {
                             <div className="text-white mt-4 md:mt-12 lg:mt-20 xl:mt-24">
                                 <Link
                                     href="#contact"
-                                    className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-[#804dee] hover:bg-slate-200"
+                                    className="px-6 inline-block py-3 w-72 sm:w-fit rounded-full mr-4 bg-[#804dee] hover:bg-slate-200"
                                 >
                                     Hire Me
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-[#804dee] hover:bg-slate-800 mt-3"
+                                    className="px-1 inline-block py-1 w-72 sm:w-fit rounded-full bg-[#804dee] hover:bg-slate-800 mt-3"
                                 >
                                     <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                         Download CV
