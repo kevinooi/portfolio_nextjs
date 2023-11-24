@@ -1,7 +1,9 @@
 import logo from "./logo.svg";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import darkgithub from "./github.png";
+import lightgithub from "./github.svg";
+import linkedin from "./linkedin.svg";
 
 import web from "./service/web.png";
 import backend from "./service/backend.png";
@@ -30,30 +32,32 @@ import jobit from "./project/jobit.png";
 import recipeapp from "./project/recipeapp.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  gaincue,
-  visix,
-  carrent,
-  jobit,
-  recipeapp,
+    logo,
+    backend,
+    creator,
+    mobile,
+    web,
+    menu,
+    close,
+    css,
+    docker,
+    figma,
+    git,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    redux,
+    tailwind,
+    typescript,
+    threejs,
+    gaincue,
+    visix,
+    darkgithub,
+    carrent,
+    recipeapp,
+    jobit,
+    lightgithub,
+    linkedin,
 };
