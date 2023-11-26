@@ -15,7 +15,7 @@ const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({
         email: "",
-        subject: "",
+        name: "",
         message: "",
     });
 
@@ -35,20 +35,16 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        // TODO: add .env
         emailjs
             .send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
                 {
                     from_email: form.email,
-                    to_email: "kevinooi1997@gmail.com",
-                    subject: form.subject,
+                    from_name: form.name,
                     message: form.message,
-                    // from_name
-                    // to_name: "Kevin Ooi",
                 },
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -59,7 +55,7 @@ const Contact = () => {
 
                     setForm({
                         email: "",
-                        subject: "",
+                        name: "",
                         message: "",
                     });
                 },
@@ -83,10 +79,19 @@ const Contact = () => {
                 <div className="flex items-center justify-center gap-x-4">
                     <p className={styles.sectionSubText}>Let's connect</p>
                     <div className="flex flex-row gap-2">
-                        <Link href="linkedin.com">
+                        <Link
+                            href="https://www.linkedin.com/in/kevin-ooi-43b512115/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image src={linkedin} alt="Linkedin Icon" />
                         </Link>
-                        <Link href="github.com">
+
+                        <Link
+                            href="https://github.com/kevinooi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image
                                 src={lightgithub}
                                 alt="Github Icon"
@@ -116,14 +121,14 @@ const Contact = () => {
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">
-                            Subject
+                            Your Name
                         </span>
                         <input
                             type="text"
-                            name="subject"
-                            value={form.subject}
+                            name="name"
+                            value={form.name}
                             onChange={handleChange}
-                            placeholder="Just saying hi"
+                            placeholder="What's your name?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
