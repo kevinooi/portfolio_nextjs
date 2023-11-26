@@ -10,26 +10,26 @@ import backend from "./service/backend.png";
 import mobile from "./service/mobile.png";
 import creator from "./service/creator.png";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import php from "./tech/php.png";
+import reactjs from "./tech/reactjs.png";
+import nextjs from "./tech/nextjs.png";
+import tailwind from "./tech/tailwind.png";
+import vue from "./tech/vue.png";
+import flutter from "./tech/flutter.png";
+import laravel from "./tech/laravel.svg";
+import adonisjs from "./tech/adonisjs.png";
+import nodejs from "./tech/nodejs.png";
+import mongodb from "./tech/mongodb.png";
+import git from "./tech/git.png";
 
 import gaincue from "./company/gaincue.png";
 import visix from "./company/visix.png";
 
-import carrent from "./project/carrent.png";
-import jobit from "./project/jobit.png";
+import twitterclone from "./project/twitterclone.png";
 import recipeapp from "./project/recipeapp.png";
+import cryptoverse from "./project/cryptoverse.png";
 
 export {
     logo,
@@ -39,25 +39,25 @@ export {
     web,
     menu,
     close,
-    css,
-    docker,
-    figma,
-    git,
-    html,
     javascript,
-    mongodb,
-    nodejs,
-    reactjs,
-    redux,
-    tailwind,
     typescript,
-    threejs,
+    php,
+    reactjs,
+    nextjs,
+    tailwind,
+    vue,
+    flutter,
+    laravel,
+    adonisjs,
+    nodejs,
+    mongodb,
+    git,
     gaincue,
     visix,
     darkgithub,
-    carrent,
+    twitterclone,
     recipeapp,
-    jobit,
+    cryptoverse,
     lightgithub,
     linkedin,
 };

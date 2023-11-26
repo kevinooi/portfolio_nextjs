@@ -4,22 +4,22 @@ import {
     web,
     javascript,
     typescript,
-    html,
-    css,
+    php,
     reactjs,
-    redux,
+    nextjs,
     tailwind,
+    laravel,
+    vue,
+    flutter,
+    adonisjs,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    threejs,
     gaincue,
     visix,
-    carrent,
-    jobit,
+    twitterclone,
     recipeapp,
+    cryptoverse,
 } from "../assets";
 
 export const navLinks = [
@@ -54,14 +54,6 @@ const services = [
 
 const technologies = [
     {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
         name: "JavaScript",
         icon: javascript,
     },
@@ -70,16 +62,36 @@ const technologies = [
         icon: typescript,
     },
     {
+        name: "PHP",
+        icon: php,
+    },
+    {
         name: "React JS",
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "Next JS",
+        icon: nextjs,
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
+    },
+    {
+        name: "Laravel",
+        icon: laravel,
+    },
+    {
+        name: "Vue JS",
+        icon: vue,
+    },
+    {
+        name: "Flutter",
+        icon: flutter,
+    },
+    {
+        name: "Adonis JS",
+        icon: adonisjs,
     },
     {
         name: "Node JS",
@@ -90,20 +102,8 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
     },
 ];
 
@@ -145,67 +145,157 @@ const experiences = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Twitter Clone",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A Twitter clone, built using the T3 stack, featuring real-time updates and functionalities such as Discord login, follower interactions, and personalized timelines.",
         tags: [
             {
-                name: "react",
+                name: "nextjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "typescript",
                 color: "green-text-gradient",
+            },
+            {
+                name: "trpc",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "prisma",
+                color: "blue-text-gradient",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "nextauth",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: twitterclone,
+        source_code_link: "https://github.com/kevinooi/twitter-clone",
     },
     {
         name: "Recipe App",
         description:
-            "A flutter application available on both mobile and web platforms, offering an extensive range of food and drink recipes categorized along with detailed ingredient information.",
+            "A flutter application accessible on both mobile and web platforms, providing a wide variety of food and drink recipes categorized along with detailed ingredient information.",
         tags: [
             {
                 name: "flutter",
                 color: "blue-text-gradient",
             },
             {
-                name: "flutter_bloc",
+                name: "flutterweb",
                 color: "green-text-gradient",
             },
             {
-                name: "unit_test",
+                name: "bloc",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "unittest",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "widgettest",
+                color: "green-text-gradient",
+            },
+            {
+                name: "integrationtest",
                 color: "pink-text-gradient",
             },
         ],
         image: recipeapp,
         source_code_link: "https://github.com/kevinooi/recipe_app",
+    },
+    {
+        name: "Cryptoverse",
+        description:
+            "Web application that delivers a comprehensive range of cryptocurrency statistics, including prices, trends, and in-depth news and information.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "redux",
+                color: "green-text-gradient",
+            },
+            {
+                name: "hooks",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "antdesign",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+        ],
+        image: cryptoverse,
+        source_code_link: "https://github.com/kevinooi/cryptoverse",
+    },
+    {
+        name: "Cryptoverse",
+        description:
+            "Web application that delivers a comprehensive range of cryptocurrency statistics, including prices, trends, and in-depth news and information.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "redux",
+                color: "green-text-gradient",
+            },
+            {
+                name: "hooks",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "antdesign",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+        ],
+        image: cryptoverse,
+        source_code_link: "https://github.com/kevinooi/cryptoverse",
+    },
+    {
+        name: "Cryptoverse",
+        description:
+            "Web application that delivers a comprehensive range of cryptocurrency statistics, including prices, trends, and in-depth news and information.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "redux",
+                color: "green-text-gradient",
+            },
+            {
+                name: "hooks",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "antdesign",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+        ],
+        image: cryptoverse,
+        source_code_link: "https://github.com/kevinooi/cryptoverse",
     },
 ];
 
