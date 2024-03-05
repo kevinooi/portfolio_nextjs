@@ -51,7 +51,7 @@ const Hero = () => {
                   Hire Me
                 </Link>
                 <a
-                  href="/resume.pdf"
+                  href="https://kevinooi.github.io/portfolio_nextjs/resume.pdf"
                   download="Kevin.pdf"
                   target="_blank"
                   className="px-1 inline-block py-1 w-72 sm:w-fit rounded-full bg-[#804dee] hover:bg-slate-800 mt-3"
