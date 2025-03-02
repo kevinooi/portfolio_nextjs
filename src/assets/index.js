@@ -13,19 +13,18 @@ import creator from "./service/creator.png";
 import javascript from "./tech/javascript.png";
 import typescript from "./tech/typescript.png";
 import php from "./tech/php.png";
-import reactjs from "./tech/reactjs.png";
-import nextjs from "./tech/nextjs.png";
-import tailwind from "./tech/tailwind.png";
+import java from "./tech/java.png";
 import vue from "./tech/vue.png";
-import flutter from "./tech/flutter.png";
 import laravel from "./tech/laravel.svg";
+import flutter from "./tech/flutter.png";
+import nextjs from "./tech/nextjs.png";
+import reactjs from "./tech/reactjs.png";
 import adonisjs from "./tech/adonisjs.png";
 import nodejs from "./tech/nodejs.png";
-import mongodb from "./tech/mongodb.png";
-import git from "./tech/git.png";
+import tailwind from "./tech/tailwind.png";
 
 import gaincue from "./company/gaincue.png";
-import visix from "./company/visix.png";
+import rcc from "./company/rcc.png";
 
 import twitterclone from "./project/twitterclone.png";
 import recipeapp from "./project/recipeapp.png";
@@ -45,18 +44,17 @@ export {
   javascript,
   typescript,
   php,
-  reactjs,
-  nextjs,
-  tailwind,
+  java,
   vue,
-  flutter,
   laravel,
+  flutter,
+  nextjs,
+  reactjs,
   adonisjs,
   nodejs,
-  mongodb,
-  git,
+  tailwind,
   gaincue,
-  visix,
+  rcc,
   darkgithub,
   twitterclone,
   recipeapp,
