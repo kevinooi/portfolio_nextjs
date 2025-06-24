@@ -21,88 +21,80 @@ import {
   cryptoverse,
   animehub,
   pathfinder,
-  notes,
+  notes
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "About"
   },
   {
     id: "work",
-    title: "Work",
+    title: "Work"
   },
   {
     id: "contact",
-    title: "Contact",
-  },
+    title: "Contact"
+  }
 ];
 
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: web
   },
   {
     title: "Flutter Developer",
-    icon: mobile,
+    icon: mobile
   },
   {
     title: "Backend Developer",
-    icon: backend,
-  },
+    icon: backend
+  }
 ];
 
 const technologies = [
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "PHP",
-    icon: php,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "Vue JS",
-    icon: vue,
-  },
-  {
-    name: "Laravel",
-    icon: laravel,
-  },
-  {
     name: "Flutter",
-    icon: flutter,
+    icon: flutter
   },
   {
     name: "NextJS",
-    icon: nextjs,
+    icon: nextjs
   },
   {
-    name: "ReactJS",
-    icon: reactjs,
+    name: "Laravel",
+    icon: laravel
+  },
+  {
+    name: "Vue JS",
+    icon: vue
   },
   {
     name: "Adonis JS",
-    icon: adonisjs,
+    icon: adonisjs
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: nodejs
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "JavaScript",
+    icon: javascript
   },
+  {
+    name: "TypeScript",
+    icon: typescript
+  },
+  {
+    name: "PHP",
+    icon: php
+  },
+  {
+    name: "Java",
+    icon: java
+  }
 ];
 
 const white = "#FFFFFF";
@@ -119,8 +111,8 @@ const experiences = [
       "Full Stack Web Development: I participate in full stack web projects using Node.js frameworks like AdonisJS (TypeScript) and ReactJS.",
       "Unit Testing: I'm experienced in writing unit tests to validate code logic and ensure everything runs smoothly.",
       "Database Management: I've worked with relational databases like MySQL and PostgreSQL to keep data organized and accessible.",
-      "API Integration: I integrate RESTful and GraphQL APIs to connect different parts of applications seamlessly.",
-    ],
+      "API Integration: I integrate RESTful and GraphQL APIs to connect different parts of applications seamlessly."
+    ]
   },
   {
     title: "Full Stack Web Developer",
@@ -134,9 +126,9 @@ const experiences = [
       "Full Stack Web Development: I build full stack web applications using Vue.js (versions 2.0 & 3.0), Laravel (PHP), and Node.js.",
       "Tech Skills: I'm comfortable with a range of technologies including HTML, CSS, JavaScript, PHP, Java, jQuery, Bootstrap, and TailwindCSS.",
       "Additional Tools: I'm familiar with backend queues, web sockets, InertiaJS, Vuetify, NuxtJS, NextJS, and Prisma—these help me build more robust and efficient applications.",
-      "Web3 & Blockchain: I've got experience with web3 and blockchain technology, which is really exciting for building decentralized solutions.",
-    ],
-  },
+      "Web3 & Blockchain: I've got experience with web3 and blockchain technology, which is really exciting for building decentralized solutions."
+    ]
+  }
 ];
 
 const projects = [
@@ -147,31 +139,31 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "typescript",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "trpc",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "prisma",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "tailwind",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "nextauth",
-        color: "pink-text-gradient",
-      },
+        color: "pink-text-gradient"
+      }
     ],
     image: twitterclone,
-    source_code_link: "https://github.com/kevinooi/twitter-clone",
+    source_code_link: "https://github.com/kevinooi/twitter-clone"
     // preview_url: "https://twitter-clone-beta-steel.vercel.app/",
   },
   {
@@ -181,31 +173,31 @@ const projects = [
     tags: [
       {
         name: "flutter",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "flutterweb",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "flutterbloc",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "unittest",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "widgettest",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "integrationtest",
-        color: "pink-text-gradient",
-      },
+        color: "pink-text-gradient"
+      }
     ],
     image: recipeapp,
-    source_code_link: "https://github.com/kevinooi/recipe_app",
+    source_code_link: "https://github.com/kevinooi/recipe_app"
   },
   {
     name: "Notes",
@@ -214,27 +206,27 @@ const projects = [
     tags: [
       {
         name: "nextjs14",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "prisma",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "reactquery",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "serveraction",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "tailwind",
-        color: "green-text-gradient",
-      },
+        color: "green-text-gradient"
+      }
     ],
     image: notes,
-    source_code_link: "https://github.com/kevinooi/note_nextjs",
+    source_code_link: "https://github.com/kevinooi/note_nextjs"
   },
   {
     name: "AnimeHub",
@@ -243,27 +235,27 @@ const projects = [
     tags: [
       {
         name: "nextjs14",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "typescript",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "serveraction",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "tailwind",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "framermotion",
-        color: "green-text-gradient",
-      },
+        color: "green-text-gradient"
+      }
     ],
     image: animehub,
-    source_code_link: "https://github.com/kevinooi/anime_hub",
+    source_code_link: "https://github.com/kevinooi/anime_hub"
   },
   {
     name: "Pathfinder Visualization",
@@ -272,28 +264,27 @@ const projects = [
     tags: [
       {
         name: "flutter",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "dijikstra",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "algorithm",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "riverpod",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "animation",
-        color: "green-text-gradient",
-      },
+        color: "green-text-gradient"
+      }
     ],
     image: pathfinder,
-    source_code_link:
-      "https://github.com/kevinooi/pathfinder_visualization_flutter",
+    source_code_link: "https://github.com/kevinooi/pathfinder_visualization_flutter"
   },
   {
     name: "Cryptoverse",
@@ -302,28 +293,28 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "redux",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "hooks",
-        color: "pink-text-gradient",
+        color: "pink-text-gradient"
       },
       {
         name: "antdesign",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
-      },
+        color: "green-text-gradient"
+      }
     ],
     image: cryptoverse,
-    source_code_link: "https://github.com/kevinooi/cryptoverse",
-  },
+    source_code_link: "https://github.com/kevinooi/cryptoverse"
+  }
 ];
 
 export { services, technologies, experiences, projects };

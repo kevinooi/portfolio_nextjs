@@ -18,10 +18,8 @@ import vue from "./tech/vue.png";
 import laravel from "./tech/laravel.svg";
 import flutter from "./tech/flutter.png";
 import nextjs from "./tech/nextjs.png";
-import reactjs from "./tech/reactjs.png";
 import adonisjs from "./tech/adonisjs.png";
 import nodejs from "./tech/nodejs.png";
-import tailwind from "./tech/tailwind.png";
 
 import gaincue from "./company/gaincue.png";
 import rcc from "./company/rcc.png";
@@ -49,10 +47,8 @@ export {
   laravel,
   flutter,
   nextjs,
-  reactjs,
   adonisjs,
   nodejs,
-  tailwind,
   gaincue,
   rcc,
   darkgithub,
@@ -63,5 +59,5 @@ export {
   pathfinder,
   notes,
   lightgithub,
-  linkedin,
+  linkedin
 };
