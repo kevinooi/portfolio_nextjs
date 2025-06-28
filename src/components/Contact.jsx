@@ -78,9 +78,9 @@ const Contact = () => {
   };
 
   return (
-    <div className={`mt-24 sm:mt-6 flex xl:flex-row justify-center gap-10 overflow-hidden`}>
+    <div className={`mt-24 sm:mt-6 flex xl:flex-row justify-center gap-10`}>
       <motion.div variants={slideIn("down", "tween", 0.2, 1)} className="flex-auto bg-teal-900 rounded-2xl md:max-w-3xl shadow-card">
-        <div className="relative p-8">
+        <div className="relative p-4 sm:p-8">
           {loading && (
             <div className="absolute inset-0 bg-black opacity-50 z-50 flex items-center justify-center">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white font-bold text-xl"></div>
@@ -99,42 +99,42 @@ const Contact = () => {
           </div>
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-4">
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your email</span>
+              <span className="text-white font-medium text-xs sm:text-lg mb-4">Your email</span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email address?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-2 sm:px-6 placeholder:text-secondary text-white text-xs sm:text-lg rounded-lg outline-none border-none font-medium"
               />
             </label>
             <div className="relative mt-2">
               {errors.email && <span className="text-red-500 text-xs absolute bottom-0">{errors.email}</span>}
             </div>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
+              <span className="text-white font-medium text-xs sm:text-lg mb-4">Your Name</span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-2 sm:px-6 placeholder:text-secondary text-white text-xs sm:text-lg rounded-lg outline-none border-none font-medium"
               />
             </label>
             <div className="relative mt-2">
               {errors.name && <span className="text-red-500 mt-2 text-xs absolute bottom-0">{errors.name}</span>}
             </div>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
+              <span className="text-white font-medium text-xs sm:text-lg mb-4">Your Message</span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Let's talk about..."
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-2 sm:px-6 placeholder:text-secondary text-white text-xs sm:text-lg rounded-lg outline-none border-none font-medium"
               />
             </label>
             <div className="relative mt-2">
