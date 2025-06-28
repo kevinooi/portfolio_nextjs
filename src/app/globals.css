@@ -17,6 +17,12 @@
   background-color: #0f766e;
 }
 
+@media (max-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: white !important;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

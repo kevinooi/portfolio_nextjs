@@ -78,11 +78,8 @@ const Contact = () => {
   };
 
   return (
-    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse justify-center gap-10 overflow-hidden`}>
-      <motion.div
-        variants={slideIn("down", "tween", 0.2, 1)}
-        className="flex-auto md:flex-1 bg-teal-900 rounded-2xl max-w-4xl shadow-card"
-      >
+    <div className={`mt-24 sm:mt-6 flex xl:flex-row justify-center gap-10 overflow-hidden`}>
+      <motion.div variants={slideIn("down", "tween", 0.2, 1)} className="flex-auto bg-teal-900 rounded-2xl md:max-w-3xl shadow-card">
         <div className="relative p-8">
           {loading && (
             <div className="absolute inset-0 bg-black opacity-50 z-50 flex items-center justify-center">

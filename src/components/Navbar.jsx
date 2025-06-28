@@ -67,12 +67,15 @@ const Navbar = () => {
                 </ul>
 
                 <div className="sm:hidden flex flex-1 justify-end items-center">
-                    <Image
-                        src={toggle ? close : menu}
-                        alt="menu"
-                        className="w-[28px] h-[28px] object-contain"
-                        onClick={() => setToggle(!toggle)}
-                    />
+                    <div className="border rounded-2xl p-2 bg-primary">
+                        <Image
+                            src={toggle ? close : menu}
+                            alt="menu"
+                            className="w-[28px] h-[28px] object-contain"
+                            color="#2e2e2e"
+                            onClick={() => setToggle(!toggle)}
+                        />
+                    </div>
 
                     <div
                         className={`${
@@ -85,8 +88,8 @@ const Navbar = () => {
                                     key={nav.id}
                                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
                                         active === nav.title
-                                            ? "text-primary"
-                                            : "text-secondary"
+                                            ? "text-white"
+                                            : "text-gray-400"
                                     }`}
                                     onClick={() => {
                                         setToggle(!toggle);
