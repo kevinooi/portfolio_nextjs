@@ -137,11 +137,11 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "typescript",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "trpc",
@@ -149,11 +149,11 @@ const projects = [
       },
       {
         name: "prisma",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "tailwind",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "nextauth",
@@ -171,11 +171,11 @@ const projects = [
     tags: [
       {
         name: "flutter",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "flutterweb",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "flutterbloc",
@@ -183,11 +183,11 @@ const projects = [
       },
       {
         name: "unittest",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "widgettest",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "integrationtest",
@@ -204,11 +204,11 @@ const projects = [
     tags: [
       {
         name: "nextjs14",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "prisma",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "reactquery",
@@ -216,11 +216,11 @@ const projects = [
       },
       {
         name: "serveraction",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "tailwind",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       }
     ],
     image: notes,
@@ -233,11 +233,11 @@ const projects = [
     tags: [
       {
         name: "nextjs14",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "typescript",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "serveraction",
@@ -245,11 +245,11 @@ const projects = [
       },
       {
         name: "tailwind",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "framermotion",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       }
     ],
     image: animehub,
@@ -262,11 +262,11 @@ const projects = [
     tags: [
       {
         name: "flutter",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "dijikstra",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "algorithm",
@@ -274,11 +274,11 @@ const projects = [
       },
       {
         name: "riverpod",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "animation",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       }
     ],
     image: pathfinder,
@@ -291,11 +291,11 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "redux",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       },
       {
         name: "hooks",
@@ -303,11 +303,11 @@ const projects = [
       },
       {
         name: "antdesign",
-        color: "blue-text-gradient"
+        color: "violet-text-gradient"
       },
       {
         name: "restapi",
-        color: "green-text-gradient"
+        color: "blue-text-gradient"
       }
     ],
     image: cryptoverse,

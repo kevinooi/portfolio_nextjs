@@ -32,7 +32,7 @@ const Navbar = () => {
             className={`${
                 styles.paddingX
             } w-full flex items-center py-5 fixed top-0 z-20 ${
-                scrolled ? "bg-primary" : "bg-transparent"
+                scrolled ? "bg-tertiary" : "bg-transparent"
             }`}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -45,7 +45,7 @@ const Navbar = () => {
                     }}
                 >
                     {/* TODO: logo maybe? */}
-                    <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+                    <p className="text-primary text-[18px] font-bold cursor-pointer flex ">
                         Kevin Ooi
                     </p>
                 </Link>
@@ -56,9 +56,9 @@ const Navbar = () => {
                             key={nav.id}
                             className={`${
                                 active === nav.title
-                                    ? "text-white"
+                                    ? "text-primary"
                                     : "text-secondary"
-                            } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            } hover:text-primary text-[18px] font-medium cursor-pointer`}
                             onClick={() => setActive(nav.title)}
                         >
                             <Link href={`#${nav.id}`}>{nav.title}</Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                                     key={nav.id}
                                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
                                         active === nav.title
-                                            ? "text-white"
+                                            ? "text-primary"
                                             : "text-secondary"
                                     }`}
                                     onClick={() => {

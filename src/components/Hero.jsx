@@ -14,39 +14,28 @@ const Hero = () => {
             className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start justify-start gap-5`}
           >
             <div className="flex flex-col justify-center items-center mt-5">
-              <div className="w-5 h-5 rounded-full bg-[#804dee]" />
-              <div className="w-1 md:h-[350px] h-[250px] violet-gradient" />
+              <div className="w-5 h-5 rounded-full bg-teal-700" />
+              <div className="w-1 md:h-[350px] h-[250px] green-gradient" />
             </div>
             <div className="z-10 text-start">
-              <h1 className={`${styles.heroHeadText} text-white mt-2`}>
-                Hi, I&apos;m{" "}
-              </h1>
-              <h1 className={`${styles.heroHeadText} text-[#804dee]`}>
+              <h1 className={`${styles.heroHeadText} text-primary mt-2`}>Hi, I&apos;m </h1>
+              <h1 className={`${styles.heroHeadText} text-teal-700`}>
                 <TypeAnimation
-                  sequence={[
-                    "Kevin",
-                    1000,
-                    "Web Developer",
-                    1000,
-                    "Mobile Developer",
-                    1000,
-                    "Backend Developer",
-                    1000,
-                  ]}
+                  sequence={["Kevin", 1000, "Web Developer", 1000, "Mobile Developer", 1000, "Backend Developer", 1000]}
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
                 />
               </h1>
               {/* #915EFF */}
-              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              <p className={`${styles.heroSubText} mt-2 text-primary`}>
                 I develop <br className="block xl:hidden" />
                 web and mobile applications
               </p>
-              <div className="text-white mt-4 md:mt-12 lg:mt-20 xl:mt-24">
+              <div className="text-primary mt-4 md:mt-12 lg:mt-20 xl:mt-24">
                 <Link
                   href="#contact"
-                  className="px-6 inline-block py-3 w-72 sm:w-fit rounded-full mr-4 bg-[#804dee] hover:bg-slate-200"
+                  className="px-6 inline-block py-3 w-72 sm:w-fit rounded-full mr-4 text-white hover:text-primary bg-teal-700 hover:bg-teal-200"
                 >
                   Hire Me
                 </Link>
@@ -54,11 +43,9 @@ const Hero = () => {
                   href="https://kevinooi.github.io/portfolio_nextjs/resume.pdf"
                   download="Kevin.pdf"
                   target="_blank"
-                  className="px-1 inline-block py-1 w-72 sm:w-fit rounded-full bg-[#804dee] hover:bg-slate-800 mt-3"
+                  className="px-1 inline-block py-1 w-72 sm:w-fit rounded-full bg-teal-700 hover:bg-teal-200 mt-3"
                 >
-                  <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                    Download CV
-                  </span>
+                  <span className="block bg-[#d6dbd4] hover:bg-teal-200 rounded-full px-5 py-2">Download CV</span>
                 </a>
               </div>
             </div>

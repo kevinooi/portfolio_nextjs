@@ -1,28 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   mode: "jit",
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
+        primary: "#2E2E2E", // Deeper neutral for main text
+        secondary: "#5C5C5C", // Muted gray for subtext or labels
+        tertiary: "#F1F0E8", // Background color
+        "light-green": "#A7C1A8",
+        "soft-green": "#A5C9A4"
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0px 35px 120px -15px #819A91" // forest green
       },
       screens: {
-        xs: "450px",
+        xs: "450px"
       },
-      backgroundImage: {},
+      backgroundImage: {}
       // height: [
       //     { 280: "280px" },
       //     { 480: "480px" },
@@ -36,7 +31,7 @@ module.exports = {
       //     { 800: "800px" },
       // ],
       // padding: [{ 200: "200px", 250: "250px", 300: "300px" }],
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 };

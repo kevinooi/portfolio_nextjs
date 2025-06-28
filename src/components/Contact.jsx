@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../app/styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { lightgithub, linkedin } from "@/assets";
@@ -16,13 +16,13 @@ const Contact = () => {
   const [form, setForm] = useState({
     email: "",
     name: "",
-    message: "",
+    message: ""
   });
 
   const [errors, setErrors] = useState({
     email: null,
     name: null,
-    message: null,
+    message: null
   });
 
   const [loading, setLoading] = useState(false);
@@ -33,7 +33,7 @@ const Contact = () => {
 
     setForm({
       ...form,
-      [name]: value,
+      [name]: value
     });
   };
 
@@ -61,7 +61,7 @@ const Contact = () => {
         {
           from_email: form.email,
           from_name: form.name,
-          message: form.message,
+          message: form.message
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
@@ -78,12 +78,10 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse justify-center gap-10 overflow-hidden`}>
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-auto md:flex-1 bg-black-100 rounded-2xl"
+        variants={slideIn("down", "tween", 0.2, 1)}
+        className="flex-auto md:flex-1 bg-teal-900 rounded-2xl max-w-4xl shadow-card"
       >
         <div className="relative p-8">
           {loading && (
@@ -92,36 +90,17 @@ const Contact = () => {
             </div>
           )}
           <div className="flex items-center justify-center gap-x-4">
-            <p className={styles.sectionSubText}>Let's connect</p>
+            <p className="sm:text-[18px] text-[14px] text-white uppercase tracking-wider">Let's connect</p>
             <div className="flex flex-row gap-2">
-              <Link
-                href="https://www.linkedin.com/in/kevin-ooi-43b512115/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={linkedin}
-                  alt="Linkedin Icon"
-                />
+              <Link href="https://www.linkedin.com/in/kevin-ooi-43b512115/" target="_blank" rel="noopener noreferrer">
+                <Image src={linkedin} alt="Linkedin Icon" />
               </Link>
-              <Link
-                href="https://github.com/kevinooi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={lightgithub}
-                  alt="Github Icon"
-                  className="w-12 h-12 object-contain"
-                />
+              <Link href="https://github.com/kevinooi" target="_blank" rel="noopener noreferrer">
+                <Image src={lightgithub} alt="Github Icon" className="w-12 h-12 object-contain" />
               </Link>
             </div>
           </div>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-4"
-          >
+          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-4">
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your email</span>
               <input
@@ -134,11 +113,7 @@ const Contact = () => {
               />
             </label>
             <div className="relative mt-2">
-              {errors.email && (
-                <span className="text-red-500 text-xs absolute bottom-0">
-                  {errors.email}
-                </span>
-              )}
+              {errors.email && <span className="text-red-500 text-xs absolute bottom-0">{errors.email}</span>}
             </div>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Name</span>
@@ -152,11 +127,7 @@ const Contact = () => {
               />
             </label>
             <div className="relative mt-2">
-              {errors.name && (
-                <span className="text-red-500 mt-2 text-xs absolute bottom-0">
-                  {errors.name}
-                </span>
-              )}
+              {errors.name && <span className="text-red-500 mt-2 text-xs absolute bottom-0">{errors.name}</span>}
             </div>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Message</span>
@@ -170,15 +141,11 @@ const Contact = () => {
               />
             </label>
             <div className="relative mt-2">
-              {errors.message && (
-                <span className="text-red-500 mt-2 text-xs absolute bottom-0">
-                  {errors.message}
-                </span>
-              )}
+              {errors.message && <span className="text-red-500 mt-2 text-xs absolute bottom-0">{errors.message}</span>}
             </div>
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-primary font-bold shadow-md shadow-primary"
               disabled={loading}
             >
               {loading ? "Sending..." : "Send"}
@@ -186,12 +153,12 @@ const Contact = () => {
           </form>
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="flex-auto xl:flex-1 xl:h-auto md:h-[650px] h-[450px]"
       >
         <EarthCanvas />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

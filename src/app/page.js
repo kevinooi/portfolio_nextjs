@@ -12,7 +12,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="relative z-10 bg-primary">
+    <div className="relative z-10 bg-tertiary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Hero />
