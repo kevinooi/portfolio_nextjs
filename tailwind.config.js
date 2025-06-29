@@ -17,7 +17,28 @@ module.exports = {
       screens: {
         xs: "450px"
       },
-      backgroundImage: {}
+      backgroundImage: {},
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" }
+        },
+        orbit: {
+          "0%": { transform: "rotateZ(0deg)" },
+          "100%": { transform: "rotateZ(360deg)" }
+        }
+      },
+      animation: {
+        bounce: "bounce 4s ease-in-out infinite",
+        orbit: "orbit 8s linear infinite"
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))"
+      },
+      animation: {
+        bounce: "bounce 3s ease-in-out infinite",
+        orbit: "orbit 6s linear infinite"
+      }
       // height: [
       //     { 280: "280px" },
       //     { 480: "480px" },
