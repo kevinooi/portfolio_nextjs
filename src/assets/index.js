@@ -27,7 +27,7 @@ import rcc from "./company/rcc.png";
 import twitterclone from "./project/twitterclone.png";
 import recipeapp from "./project/recipeapp.png";
 import cryptoverse from "./project/cryptoverse.png";
-import animehub from "./project/animehub.png";
+import animemagic from "./project/animemagic.png";
 import pathfinder from "./project/pathfinder.png";
 import notes from "./project/notes.png";
 
@@ -55,7 +55,7 @@ export {
   twitterclone,
   recipeapp,
   cryptoverse,
-  animehub,
+  animemagic,
   pathfinder,
   notes,
   lightgithub,

@@ -17,7 +17,7 @@ import {
   twitterclone,
   recipeapp,
   cryptoverse,
-  animehub,
+  animemagic,
   pathfinder,
   notes
 } from "../assets";
@@ -131,6 +131,35 @@ const experiences = [
 
 const projects = [
   {
+    name: "Anime Magic",
+    description: "An anime search website built using React and Redux. It features infinite scrolling and visual appealing animation.",
+    tags: [
+      {
+        name: "react",
+        color: "violet-text-gradient"
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "tailwind",
+        color: "violet-text-gradient"
+      },
+      {
+        name: "framermotion",
+        color: "blue-text-gradient"
+      }
+    ],
+    image: animemagic,
+    source_code_link: "https://github.com/kevinooi/anime-magic",
+    preview_url: "https://anime-magic.netlify.app"
+  },
+  {
     name: "Twitter Clone",
     description:
       "A Twitter clone, built using the T3 stack, featuring real-time updates and functionalities such as Discord login, follower interactions, and personalized timelines.",
@@ -225,35 +254,6 @@ const projects = [
     ],
     image: notes,
     source_code_link: "https://github.com/kevinooi/note_nextjs"
-  },
-  {
-    name: "AnimeHub",
-    description:
-      "An anime website using Next.js 14 that comes with server actions. It features infinite scrolling and visual appealing card animation.",
-    tags: [
-      {
-        name: "nextjs14",
-        color: "violet-text-gradient"
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient"
-      },
-      {
-        name: "serveraction",
-        color: "pink-text-gradient"
-      },
-      {
-        name: "tailwind",
-        color: "violet-text-gradient"
-      },
-      {
-        name: "framermotion",
-        color: "blue-text-gradient"
-      }
-    ],
-    image: animehub,
-    source_code_link: "https://github.com/kevinooi/anime_hub"
   },
   {
     name: "Pathfinder Visualization",
